@@ -1,0 +1,48 @@
+/* RESET */
+ul, li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tab-title {
+  position: relative;
+  width: 100%;
+}
+.tab-title:before, .tab-title:after {
+  display: table;
+  content: '';
+}
+.tab-title:after {
+  clear: both;
+}
+.tab-title li {
+  float: left;
+  width: 25%;
+  padding: .8em 0;
+  color: #fff;
+  text-align: center;
+  background-color: #26daa1;
+  cursor: pointer;
+}
+.tab-title-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: .45s ease-in-out;
+  -moz-transition: .45s ease-in-out;
+  -o-transition: .45s ease-in-out;
+  transition: .45s ease-in-out;
+}
+.tab-contents li {
+  display: none;
+  padding: 1.4em;
+  background-color: #fff;
+}
+.tab-contents li.active {
+  display: block;
+}
